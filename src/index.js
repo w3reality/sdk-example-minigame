@@ -27,10 +27,10 @@ class App extends SDK.App {
         world.addBlock(5, 7, 2, BLOCK.MODEL_ANCHOR, {href: "", text: "Angles: < ^ v >"});
         world.addBlock(5, 8, 2, BLOCK.MODEL_ANCHOR, {href: "", text: "or, Mouse Drag"});
         addPlane(2, 2, 0, BLOCK.MODEL_TEST, 4, 12); // rockets
-        world.addBlock(2, 13, 2, BLOCK.MODEL_ANCHOR, {href: "", text: "💡 Use rocket to 2F"});
+        world.addBlock(2, 13, 2, BLOCK.MODEL_ANCHOR, {href: "", text: "💡 Click rocket to F2"});
 
         addPlane(8, 16, 8, BLOCK.CONCRETE); // floor 2 --------
-        world.addBlock(2, 4, 10, BLOCK.MODEL_ANCHOR, {href: "", text: "💡 Space to jump"});
+        world.addBlock(2, 4, 10, BLOCK.MODEL_ANCHOR, {href: "", text: "💡 SPACE key to jump"});
         world.addBlock(7, 7, 10, BLOCK.MODEL_ANCHOR, {href: "/visit?v=_proto_plane", text: "Hmm, try sth else 😂"});
         addPlane(2, 2, 8, BLOCK.AIR, 4, 12); // hole
         addPlane(2, 1, 15, BLOCK.WOOD, 2, 2); // stair
@@ -45,7 +45,7 @@ class App extends SDK.App {
         addPlane(2, 3, 16, BLOCK.AIR, 2, 2); // hole
         addPlane(8, 3, 16, BLOCK.AIR, 0, 8); // hole big
         world.addBlock(6, 7, 17, BLOCK.MODEL_ANCHOR, {href: "", text: "💡 Dash and jump!!"});
-        world.addBlock(6, 5, 17, BLOCK.MODEL_ANCHOR, {href: "", text: "💡 Use Shift to dash"});
+        world.addBlock(6, 5, 17, BLOCK.MODEL_ANCHOR, {href: "", text: "💡 Use SHIFT to dash"});
         world.addBlock(4, 12, 17, BLOCK.MODEL_TEST);
 
         addPlane(8, 16, 24, BLOCK.DIRT); // floor 4 --------
@@ -99,7 +99,7 @@ class App extends SDK.App {
     update(t, dt) {
         super.update();
 
-        this.cube.position.z = 9 + 5 * Math.sin(t/1000);
+        this.cube.position.z = 9 + 6 * Math.sin(t/1000);
         this.cube.rotation.x = -Math.PI/2 * t/1000;
 
         const pos = this.player.pos;
