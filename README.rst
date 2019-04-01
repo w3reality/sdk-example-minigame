@@ -1,4 +1,6 @@
-A fully playable 3D game. Can you reach the top floor where a surprising prize is awaiting you ;)
+A fully playable 3D mini game built upon W3Reality JavaScript SDK.
+
+Can you reach the top floor where a surprising prize is awaiting you ;)
 
 🔥 `Play Now <https://w3reality.com/visit?v=_github&o=w3reality&r=sdk-example-minigame&m=umd>`__
 
