@@ -97,10 +97,11 @@ class App extends SDK.App {
 
     // override
     update(t, dt) {
-        super.update();
+        super.update(t, dt);
 
         this.cube.position.z = 9 + 6 * Math.sin(t/1000);
         this.cube.rotation.x = -Math.PI/2 * t/1000;
+        this.cube.rotation.y = -Math.PI/4 * t/1000;
 
         const pos = this.player.pos;
         const angles = this.player.angles;
