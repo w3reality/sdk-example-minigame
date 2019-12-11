@@ -4,7 +4,7 @@ const webpack = require('webpack');
 const path = require('path');
 const env = require('yargs').argv.env;
 const pkg = require('./package.json');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 let libraryName = 'app'; // pkg.name;
@@ -38,8 +38,8 @@ const config = {
     optimization: {
         minimize: minimize,
         minimizer: [
-            new UglifyJSPlugin({
-                uglifyOptions: {
+            new TerserPlugin({
+                terserOptions: {
                     compress: {
                         drop_console: true
                     }
